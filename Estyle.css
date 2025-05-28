@@ -1,0 +1,287 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.navbar-links {
+    display: flex;
+    column-gap: 20px;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: #1d2322;
+}
+
+.navbar-links a:hover {
+    text-decoration: underline;
+    color: #1d2322
+}
+
+.navbar-menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.side-navbar {
+    background-color: #1d2322;
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -60%;
+    padding: 20px;
+    color: white;
+    transition: 1.5s;
+    cursor: pointer;
+}
+
+.side-navbar-link {
+    margin-bottom: 30px;
+}
+
+.side-navbar-links a {
+    text-decoration: none;
+    color: white;
+}
+
+.side-navbar-links a:hover {
+    text-decoration: underline;
+
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+}
+
+.btn {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: #1d2322;
+    color: white;
+}
+
+.service {
+    padding: 20px;
+
+}
+
+.service-container-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.service-container-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.service-container-2 div {
+    background-color: #f2f4f2;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.new-arrival {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 35px;
+    margin-left: 35px;
+    margin-right: 35px;
+
+}
+
+.new-arrival-container {
+    position: relative;
+    flex-basis: 20%;
+}
+
+.new-arrival button {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: auto;
+    color: #1d2322;
+    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 18%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.news {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.news input {
+    padding: 10px;
+    width: 80vw;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: solid black 3px;
+}
+
+.news button {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #F2F4F7;
+    background-color: #1d2322;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.product-section {
+    margin-top: 20px;
+}
+
+.product-search {
+    width: 80%;
+    border: solid black 2px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: auto;
+}
+
+.product-search input {
+    border: none;
+    background-color: transparent;
+    width: 100%;
+}
+
+.product-search input:focus {
+    outline: none;
+}
+
+.products {
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.products-box {
+    text-align: center;
+    flex-basis: 20%;
+}
+
+.products-box img {
+    border-radius: 10px;
+}
+
+.products-box img:hover {
+    cursor: pointer;
+}
+
+.footer {
+    margin-top: 20px;
+    padding: 40px;
+    background-color: #1d2322;
+    color: white;
+}
+
+.contact {
+    width: 100%;
+    max-width: 600px;
+    background-color: #1d2322;
+    margin: 50px auto;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.contact h2 {
+    text-align: center;
+}
+
+.contact input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.contact textarea {
+    resize: vertical;
+    height: 120px
+}
+
+.contact button {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    background-color: #f2f4f2;
+    color: black;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.contact label {
+    color: white;
+}
+
+@media screen and (max-width:700px) {
+    .navbar-menu-toggle {
+        display: block;
+    }
+
+    .navbar-links {
+        display: none;
+    }
+
+    .header-image {
+        display: none;
+    }
+
+    .service-container-1 {
+        display: none;
+    }
+
+    .service-container-2 {
+        flex-direction: column;
+    }
+
+    .new-arrival-container {
+        margin-bottom: 20px;
+    }
+}
